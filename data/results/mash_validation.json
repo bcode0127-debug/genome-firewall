@@ -1,0 +1,320 @@
+{
+  "subset_size": 200,
+  "leakage_threshold": 0.001,
+  "within_st": {
+    "n_pairs": 1703,
+    "mean": 0.0018078008959835584,
+    "p95": 0.0036064379999999987,
+    "max": 0.00812554,
+    "min": 7.14446e-06
+  },
+  "between_st": {
+    "n_pairs": 18197,
+    "mean": 0.01447555757542452,
+    "p5": 0.009899594000000001,
+    "min": 0.0033931,
+    "max": 0.06019
+  },
+  "smallest_20_between_st_pairs": [
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.24356",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.0033931,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13176",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00343404,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.15044",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00345454,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13585",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00356333,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13157",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00358398,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.67164",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.24356",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.0035958,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.67164",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13176",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00360762,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.14307",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00364314,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13145",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00366092,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.67164",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13157",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00369655,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13477",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00371439,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13034",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00371737,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13676",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.0037263,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13201",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00373225,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.67164",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13585",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00374417,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.14353",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00374715,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.13684",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00375013,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.24333",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00379789,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.5779",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.24375",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00380387,
+      "cross_split": true
+    },
+    {
+      "genome_1": "573.67164",
+      "st_1": "437",
+      "split_1": "train",
+      "genome_2": "573.14307",
+      "st_2": "258",
+      "split_2": "test",
+      "distance": 0.00381882,
+      "cross_split": true
+    }
+  ],
+  "leakage_check": {
+    "threshold": 0.001,
+    "n_leaked_pairs": 0,
+    "pairs": []
+  },
+  "recommended_threshold": {
+    "value": 0.00576,
+    "method": "midpoint of within-ST max and between-ST min",
+    "mlst_grouping_consistent": false,
+    "practical_threshold_p95_p5_midpoint": 0.00675,
+    "n_overlap_pairs": 248,
+    "overlap_by_st_pair": [
+      {
+        "st_pair": [
+          "258",
+          "437"
+        ],
+        "n_pairs": 200
+      },
+      {
+        "st_pair": [
+          "240",
+          "704"
+        ],
+        "n_pairs": 15
+      },
+      {
+        "st_pair": [
+          "22",
+          "307"
+        ],
+        "n_pairs": 6
+      },
+      {
+        "st_pair": [
+          "1228",
+          "896"
+        ],
+        "n_pairs": 5
+      },
+      {
+        "st_pair": [
+          "1665",
+          "22"
+        ],
+        "n_pairs": 5
+      },
+      {
+        "st_pair": [
+          "27",
+          "3169"
+        ],
+        "n_pairs": 5
+      },
+      {
+        "st_pair": [
+          "22",
+          "560"
+        ],
+        "n_pairs": 4
+      },
+      {
+        "st_pair": [
+          "1978",
+          "788"
+        ],
+        "n_pairs": 3
+      },
+      {
+        "st_pair": [
+          "22",
+          "983"
+        ],
+        "n_pairs": 2
+      },
+      {
+        "st_pair": [
+          "560",
+          "983"
+        ],
+        "n_pairs": 1
+      },
+      {
+        "st_pair": [
+          "1665",
+          "560"
+        ],
+        "n_pairs": 1
+      },
+      {
+        "st_pair": [
+          "504",
+          "540"
+        ],
+        "n_pairs": 1
+      }
+    ],
+    "overlap_interpretation": "Overlap between the within-ST and between-ST distributions is concentrated in a small number of ST-pairs (dominated by ST258/ST437) rather than spread broadly, consistent with those STs being closely related (e.g. same clonal complex / single-locus variants) rather than MLST failing generally."
+  },
+  "missing_metadata_genome_ids": []
+}

@@ -161,3 +161,26 @@ while spgene's "Antibiotic Resistance" property also tags
 intrinsic/core genes present in nearly every genome (efflux pumps
 like AcrAB-TolC, porins, RNA polymerase, DNA gyrase) — this is a
 genuine scope difference between the two tools, not a bug.
+
+### ADR-011 — MLST is not a perfectly clean homology proxy (ST258/ST437)
+Chose: report both a strict threshold (within-ST max / between-ST
+min midpoint) and a practical bulk threshold (within-ST p95 /
+between-ST p5 midpoint) rather than a single number, and flag that
+MLST-based grouping is NOT perfectly consistent with either.
+Why: on the 200-genome stratified Mash validation
+(scripts/select_mlst_subset200.py, scripts/run_mash.sh,
+scripts/analyze_mash.py; see data/results/mash_validation.json),
+within-ST and between-ST Mash-distance distributions overlap
+(within-ST max 0.00813 > between-ST min 0.00339). The overlap is
+not broad noise — 200 of 248 overlapping pairs (81%) are ST258 vs
+ST437 specifically, with the remaining spread thinly across 11
+other ST-pairs. ST437 is a known single-locus variant of ST258
+within the same clonal complex (CG258), so this is biologically
+expected, not a data-quality problem. Bulk statistics (mean, p95/
+p5) still separate cleanly (within mean 0.0018 vs between mean
+0.0145), so MLST remains a good coarse proxy for homology, but
+callers relying on ST alone to guarantee no near-duplicate genomes
+across a train/test split should not assume closely-related STs
+(e.g. same clonal complex) are safely dissimilar.
+No cross-split leakage (Mash distance < 0.001) was found in this
+subset.

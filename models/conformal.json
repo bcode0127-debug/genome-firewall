@@ -10,14 +10,14 @@
     "alpha": 0.1,
     "q_resistant": 0.2222222222222222,
     "n_resistant_calibration": 283,
-    "q_susceptible": 0.26043533930857987,
+    "q_susceptible": 0.26043533930858015,
     "n_susceptible_calibration": 293
   },
   "gentamicin": {
-    "alpha": 0.1,
-    "q_resistant": 0.7714285714285715,
+    "alpha": 0.05,
+    "q_resistant": 0.8,
     "n_resistant_calibration": 142,
-    "q_susceptible": 0.19999999999999996,
+    "q_susceptible": 0.22857142857142854,
     "n_susceptible_calibration": 434
   }
 }

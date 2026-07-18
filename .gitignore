@@ -1,5 +1,6 @@
 .env
 .env.local
+.streamlit/secrets.toml
 venv/
 .venv-scripts/
 node_modules/
