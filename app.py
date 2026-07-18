@@ -279,6 +279,8 @@ def tab_report(models, conformal, drug_props, demo, feature_cols):
             "out of scope for the hosted app — run FASTA→TSV locally with the "
             "`amrfinder --nucleotide ...` command in `context/feature_spec.md`."
         )
+        st.sidebar.caption(
+            "No TSV handy? Two examples ship in `examples/` in the repo.")
         up = st.sidebar.file_uploader("AMRFinderPlus .tsv", type=["tsv", "txt"])
         if up is not None:
             feature_vec, ar_genes = parse_amrfinder_tsv(up, feature_cols)
