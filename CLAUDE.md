@@ -25,7 +25,7 @@ Backend:
 
 ```bash
 cd backend
-python3 -m venv venv
+python3.12 -m venv venv   # 3.14 fails to build pydantic-core; use 3.11/3.12/3.13
 source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env   # LLM_PROVIDER defaults to mock — no key needed
