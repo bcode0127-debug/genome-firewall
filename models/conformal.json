@@ -1,0 +1,23 @@
+{
+  "meropenem": {
+    "alpha": 0.1,
+    "q_resistant": 0.36363636363636365,
+    "n_resistant_calibration": 97,
+    "q_susceptible": 0.017857142857142905,
+    "n_susceptible_calibration": 479
+  },
+  "ceftazidime": {
+    "alpha": 0.1,
+    "q_resistant": 0.2222222222222222,
+    "n_resistant_calibration": 283,
+    "q_susceptible": 0.26043533930857987,
+    "n_susceptible_calibration": 293
+  },
+  "gentamicin": {
+    "alpha": 0.1,
+    "q_resistant": 0.7714285714285715,
+    "n_resistant_calibration": 142,
+    "q_susceptible": 0.19999999999999996,
+    "n_susceptible_calibration": 434
+  }
+}

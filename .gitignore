@@ -1,8 +1,12 @@
 .env
 .env.local
 venv/
+.venv-scripts/
 node_modules/
 .next/
 __pycache__/
 *.db
 *.zip
+data/*
+!data/results/
+!data/results/**

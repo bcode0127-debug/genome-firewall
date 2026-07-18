@@ -1,0 +1,3910 @@
+{
+  "top_pct": 0.05,
+  "feature_space": "vocab_model.json (pruned, model-facing feature space)",
+  "jaccard_nn_distance": {
+    "threshold_top5pct": 0.1569659411907196,
+    "n_flagged": 39
+  },
+  "absent_feature_count": {
+    "definition": "count of matrix.parquet columns (full 998-vocab) set to 1 for this genome that are NOT in vocab_model.json's 422 survivors",
+    "threshold_top5pct": 15.0,
+    "n_flagged": 42
+  },
+  "per_genome": [
+    {
+      "genome_id": "573.12771",
+      "jaccard_nn_distance": 0.11570245027542114,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.12772",
+      "jaccard_nn_distance": 0.10606062412261963,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.12777",
+      "jaccard_nn_distance": 0.08064514398574829,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.12778",
+      "jaccard_nn_distance": 0.11278194189071655,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.12779",
+      "jaccard_nn_distance": 0.1203007698059082,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.12862",
+      "jaccard_nn_distance": 0.04237288236618042,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12871",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12882",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12887",
+      "jaccard_nn_distance": 0.06976741552352905,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.12888",
+      "jaccard_nn_distance": 0.056451618671417236,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.12907",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12909",
+      "jaccard_nn_distance": 0.050420165061950684,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12913",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12914",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12922",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12925",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12931",
+      "jaccard_nn_distance": 0.026548683643341064,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12936",
+      "jaccard_nn_distance": 0.04166668653488159,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12937",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12951",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12954",
+      "jaccard_nn_distance": 0.03305786848068237,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12956",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12958",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12962",
+      "jaccard_nn_distance": 0.00952380895614624,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12965",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12972",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12978",
+      "jaccard_nn_distance": 0.027027010917663574,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12981",
+      "jaccard_nn_distance": 0.03225809335708618,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12986",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12993",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12996",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.12997",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13002",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13007",
+      "jaccard_nn_distance": 0.04000002145767212,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13011",
+      "jaccard_nn_distance": 0.026548683643341064,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13015",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13016",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13019",
+      "jaccard_nn_distance": 0.018518507480621338,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13023",
+      "jaccard_nn_distance": 0.03361344337463379,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13025",
+      "jaccard_nn_distance": 0.015503883361816406,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13027",
+      "jaccard_nn_distance": 0.026315808296203613,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13029",
+      "jaccard_nn_distance": 0.008771955966949463,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13034",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13039",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13042",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13045",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13051",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13052",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13053",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13065",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13066",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13067",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13068",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13069",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13071",
+      "jaccard_nn_distance": 0.04424780607223511,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13076",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13079",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13084",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13085",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13088",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13091",
+      "jaccard_nn_distance": 0.03200000524520874,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.13096",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13105",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13106",
+      "jaccard_nn_distance": 0.054545462131500244,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13108",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13112",
+      "jaccard_nn_distance": 0.04424780607223511,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13114",
+      "jaccard_nn_distance": 0.04424780607223511,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13119",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13127",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13131",
+      "jaccard_nn_distance": 0.04799997806549072,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.13132",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13137",
+      "jaccard_nn_distance": 0.018018007278442383,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13138",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13143",
+      "jaccard_nn_distance": 0.09160304069519043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13145",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13153",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13156",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13157",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13161",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13163",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13169",
+      "jaccard_nn_distance": 0.04273504018783569,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13175",
+      "jaccard_nn_distance": 0.039370059967041016,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13176",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13179",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13189",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13191",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13193",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13201",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13211",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13219",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13221",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13228",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13232",
+      "jaccard_nn_distance": 0.0458715558052063,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13233",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13236",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13237",
+      "jaccard_nn_distance": 0.016393423080444336,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13238",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13271",
+      "jaccard_nn_distance": 0.009345769882202148,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13273",
+      "jaccard_nn_distance": 0.04878050088882446,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13279",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13281",
+      "jaccard_nn_distance": 0.0458715558052063,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.13287",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13303",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13307",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13314",
+      "jaccard_nn_distance": 0.015999972820281982,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13322",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13324",
+      "jaccard_nn_distance": 0.035398244857788086,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13342",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13343",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13347",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13353",
+      "jaccard_nn_distance": 0.060344815254211426,
+      "absent_feature_count": 11
+    },
+    {
+      "genome_id": "573.13358",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13361",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13362",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13367",
+      "jaccard_nn_distance": 0.08799999952316284,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13369",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13378",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13381",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13384",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13387",
+      "jaccard_nn_distance": 0.05426359176635742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13392",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13394",
+      "jaccard_nn_distance": 0.046875,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13398",
+      "jaccard_nn_distance": 0.08461540937423706,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13399",
+      "jaccard_nn_distance": 0.018018007278442383,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13401",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13402",
+      "jaccard_nn_distance": 0.03571426868438721,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13412",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13418",
+      "jaccard_nn_distance": 0.04799997806549072,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.13428",
+      "jaccard_nn_distance": 0.008333325386047363,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13429",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13431",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13432",
+      "jaccard_nn_distance": 0.05426359176635742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13435",
+      "jaccard_nn_distance": 0.04799997806549072,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.13444",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13445",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13448",
+      "jaccard_nn_distance": 0.05128204822540283,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1345",
+      "jaccard_nn_distance": 0.0727272629737854,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13452",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13453",
+      "jaccard_nn_distance": 0.017699122428894043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13455",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13461",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13465",
+      "jaccard_nn_distance": 0.0629921555519104,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13466",
+      "jaccard_nn_distance": 0.05511808395385742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13468",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13474",
+      "jaccard_nn_distance": 0.05511808395385742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13476",
+      "jaccard_nn_distance": 0.05511808395385742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13477",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13478",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13491",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13494",
+      "jaccard_nn_distance": 0.027522921562194824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13502",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13503",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13508",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1351",
+      "jaccard_nn_distance": 0.1492537260055542,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.13515",
+      "jaccard_nn_distance": 0.05511808395385742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13518",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13524",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13525",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13528",
+      "jaccard_nn_distance": 0.027522921562194824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13529",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13531",
+      "jaccard_nn_distance": 0.03278690576553345,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13532",
+      "jaccard_nn_distance": 0.008000016212463379,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13535",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13541",
+      "jaccard_nn_distance": 0.04273504018783569,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13543",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13546",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13549",
+      "jaccard_nn_distance": 0.05511808395385742,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13552",
+      "jaccard_nn_distance": 0.04273504018783569,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13555",
+      "jaccard_nn_distance": 0.00917428731918335,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13559",
+      "jaccard_nn_distance": 0.017241358757019043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13563",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13565",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13568",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13573",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13576",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13578",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13584",
+      "jaccard_nn_distance": 0.05555558204650879,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.13585",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13587",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13589",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13593",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13595",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.13599",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13603",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1361",
+      "jaccard_nn_distance": 0.010101020336151123,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.13612",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13613",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13616",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13617",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13629",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13632",
+      "jaccard_nn_distance": 0.00952380895614624,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13634",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13637",
+      "jaccard_nn_distance": 0.035398244857788086,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13648",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13653",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13655",
+      "jaccard_nn_distance": 0.03361344337463379,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13665",
+      "jaccard_nn_distance": 0.07142859697341919,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.13673",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13676",
+      "jaccard_nn_distance": 0.017094016075134277,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13682",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13684",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1369",
+      "jaccard_nn_distance": 0.1428571343421936,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.13691",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13699",
+      "jaccard_nn_distance": 0.026785731315612793,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13701",
+      "jaccard_nn_distance": 0.02586209774017334,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13703",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13706",
+      "jaccard_nn_distance": 0.05555558204650879,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.1371",
+      "jaccard_nn_distance": 0.1499999761581421,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.13715",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1372",
+      "jaccard_nn_distance": 0.125,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.13721",
+      "jaccard_nn_distance": 0.04504501819610596,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13725",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13735",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13736",
+      "jaccard_nn_distance": 0.009433984756469727,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13737",
+      "jaccard_nn_distance": 0.009345769882202148,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1374",
+      "jaccard_nn_distance": 0.13636362552642822,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.13741",
+      "jaccard_nn_distance": 0.035398244857788086,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13743",
+      "jaccard_nn_distance": 0.009345769882202148,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13749",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13752",
+      "jaccard_nn_distance": 0.04273504018783569,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13756",
+      "jaccard_nn_distance": 0.017241358757019043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13759",
+      "jaccard_nn_distance": 0.027522921562194824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13765",
+      "jaccard_nn_distance": 0.017241358757019043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13767",
+      "jaccard_nn_distance": 0.027272701263427734,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13769",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13773",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13775",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13781",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13784",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13788",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13794",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13796",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13797",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13802",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13803",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13804",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13806",
+      "jaccard_nn_distance": 0.009345769882202148,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13808",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13824",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13825",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13829",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13833",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13838",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.1384",
+      "jaccard_nn_distance": 0.08771932125091553,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13842",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13843",
+      "jaccard_nn_distance": 0.008620679378509521,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13844",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13845",
+      "jaccard_nn_distance": 0.026548683643341064,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13846",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13847",
+      "jaccard_nn_distance": 0.016806721687316895,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13848",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13849",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13852",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13856",
+      "jaccard_nn_distance": 0.050420165061950684,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13861",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13862",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13867",
+      "jaccard_nn_distance": 0.018518507480621338,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13872",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13876",
+      "jaccard_nn_distance": 0.025641024112701416,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13877",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13878",
+      "jaccard_nn_distance": 0.050420165061950684,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13879",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13881",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13882",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13883",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13887",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13891",
+      "jaccard_nn_distance": 0.04237288236618042,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13892",
+      "jaccard_nn_distance": 0.009345769882202148,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13893",
+      "jaccard_nn_distance": 0.008403360843658447,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13895",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13902",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13904",
+      "jaccard_nn_distance": 0.03361344337463379,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13905",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13913",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13915",
+      "jaccard_nn_distance": 0.04629629850387573,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13917",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13921",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13923",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13925",
+      "jaccard_nn_distance": 0.02608698606491089,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.1393",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13931",
+      "jaccard_nn_distance": 0.04504501819610596,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13933",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13936",
+      "jaccard_nn_distance": 0.03636366128921509,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13937",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13939",
+      "jaccard_nn_distance": 0.04504501819610596,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13942",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13943",
+      "jaccard_nn_distance": 0.018348634243011475,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.13946",
+      "jaccard_nn_distance": 0.02325582504272461,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "573.13948",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13951",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13953",
+      "jaccard_nn_distance": 0.018691599369049072,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1396",
+      "jaccard_nn_distance": 0.08771932125091553,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13966",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1397",
+      "jaccard_nn_distance": 0.060869574546813965,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13974",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.13975",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13977",
+      "jaccard_nn_distance": 0.027522921562194824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13978",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1398",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13981",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13984",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13987",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13988",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13989",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1399",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13991",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13998",
+      "jaccard_nn_distance": 0.027522921562194824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.13999",
+      "jaccard_nn_distance": 0.04799997806549072,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.14003",
+      "jaccard_nn_distance": 0.027522921562194824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14006",
+      "jaccard_nn_distance": 0.04032260179519653,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.1401",
+      "jaccard_nn_distance": 0.045454561710357666,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14012",
+      "jaccard_nn_distance": 0.03225809335708618,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.14022",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14023",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14033",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14036",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14049",
+      "jaccard_nn_distance": 0.05555558204650879,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.14052",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1407",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14076",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14081",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14084",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14091",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14097",
+      "jaccard_nn_distance": 0.025210082530975342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14098",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14105",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14114",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14118",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14122",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14125",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14128",
+      "jaccard_nn_distance": 0.04166668653488159,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14137",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14139",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14146",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14148",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14153",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14158",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14164",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14173",
+      "jaccard_nn_distance": 0.04237288236618042,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14175",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14177",
+      "jaccard_nn_distance": 0.042016804218292236,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14181",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14182",
+      "jaccard_nn_distance": 0.042016804218292236,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14183",
+      "jaccard_nn_distance": 0.034188032150268555,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14184",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14185",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14193",
+      "jaccard_nn_distance": 0.04000002145767212,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.14206",
+      "jaccard_nn_distance": 0.04166668653488159,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14213",
+      "jaccard_nn_distance": 0.06896549463272095,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.14216",
+      "jaccard_nn_distance": 0.06896549463272095,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.14218",
+      "jaccard_nn_distance": 0.06451612710952759,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.14224",
+      "jaccard_nn_distance": 0.05833333730697632,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14228",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14229",
+      "jaccard_nn_distance": 0.018018007278442383,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14233",
+      "jaccard_nn_distance": 0.040983617305755615,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14239",
+      "jaccard_nn_distance": 0.0165289044380188,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.1424",
+      "jaccard_nn_distance": 0.08870965242385864,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14241",
+      "jaccard_nn_distance": 0.0634920597076416,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.14243",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14245",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14251",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14254",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14255",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1426",
+      "jaccard_nn_distance": 0.10852712392807007,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14266",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14269",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14281",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14282",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14283",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14288",
+      "jaccard_nn_distance": 0.035398244857788086,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14289",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1429",
+      "jaccard_nn_distance": 0.06557375192642212,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14293",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14299",
+      "jaccard_nn_distance": 0.04629629850387573,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14302",
+      "jaccard_nn_distance": 0.026548683643341064,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14306",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14307",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14308",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14313",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14315",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14317",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14321",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14323",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14329",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14338",
+      "jaccard_nn_distance": 0.06504064798355103,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.1435",
+      "jaccard_nn_distance": 0.09302324056625366,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14353",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14354",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14364",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14368",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14371",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14373",
+      "jaccard_nn_distance": 0.05128204822540283,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14376",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14378",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.1438",
+      "jaccard_nn_distance": 0.06956523656845093,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14382",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14384",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14385",
+      "jaccard_nn_distance": 0.027027010917663574,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14388",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14394",
+      "jaccard_nn_distance": 0.009090900421142578,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14395",
+      "jaccard_nn_distance": 0.03389829397201538,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14401",
+      "jaccard_nn_distance": 0.06611567735671997,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14409",
+      "jaccard_nn_distance": 0.06504064798355103,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.1442",
+      "jaccard_nn_distance": 0.061403512954711914,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14425",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14427",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14434",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14441",
+      "jaccard_nn_distance": 0.0593220591545105,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14444",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14451",
+      "jaccard_nn_distance": 0.0593220591545105,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.1446",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14462",
+      "jaccard_nn_distance": 0.0593220591545105,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14465",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14466",
+      "jaccard_nn_distance": 0.04273504018783569,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14475",
+      "jaccard_nn_distance": 0.026785731315612793,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14477",
+      "jaccard_nn_distance": 0.008547008037567139,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14483",
+      "jaccard_nn_distance": 0.0325203537940979,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14485",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14491",
+      "jaccard_nn_distance": 0.040983617305755615,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14496",
+      "jaccard_nn_distance": 0.0350877046585083,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14498",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14505",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14507",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14509",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14512",
+      "jaccard_nn_distance": 0.008474588394165039,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14514",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14515",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14516",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14518",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14523",
+      "jaccard_nn_distance": 0.0325203537940979,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14524",
+      "jaccard_nn_distance": 0.018181800842285156,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14527",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14531",
+      "jaccard_nn_distance": 0.04799997806549072,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.14533",
+      "jaccard_nn_distance": 0.05128204822540283,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14536",
+      "jaccard_nn_distance": 0.04878050088882446,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.14537",
+      "jaccard_nn_distance": 0.027027010917663574,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14542",
+      "jaccard_nn_distance": 0.016949176788330078,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.14545",
+      "jaccard_nn_distance": 0.025423705577850342,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.14547",
+      "jaccard_nn_distance": 0.03361344337463379,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.15044",
+      "jaccard_nn_distance": 0.08849555253982544,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.15107",
+      "jaccard_nn_distance": 0.11016947031021118,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15217",
+      "jaccard_nn_distance": 0.09600001573562622,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.15329",
+      "jaccard_nn_distance": 0.13709676265716553,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.1536",
+      "jaccard_nn_distance": 0.05982905626296997,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.15364",
+      "jaccard_nn_distance": 0.131147563457489,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.15366",
+      "jaccard_nn_distance": 0.04950493574142456,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.15369",
+      "jaccard_nn_distance": 0.13709676265716553,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.1537",
+      "jaccard_nn_distance": 0.061403512954711914,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.15371",
+      "jaccard_nn_distance": 0.131147563457489,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.15372",
+      "jaccard_nn_distance": 0.04950493574142456,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.15373",
+      "jaccard_nn_distance": 0.010309278964996338,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.15374",
+      "jaccard_nn_distance": 0.131147563457489,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.15375",
+      "jaccard_nn_distance": 0.13709676265716553,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.15376",
+      "jaccard_nn_distance": 0.131147563457489,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.1542",
+      "jaccard_nn_distance": 0.0701754093170166,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1552",
+      "jaccard_nn_distance": 0.05128204822540283,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15521",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1553",
+      "jaccard_nn_distance": 0.07692307233810425,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15536",
+      "jaccard_nn_distance": 0.019801974296569824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15537",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15539",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1554",
+      "jaccard_nn_distance": 0.06542056798934937,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.15548",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15565",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1557",
+      "jaccard_nn_distance": 0.05128204822540283,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1558",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15583",
+      "jaccard_nn_distance": 0.019801974296569824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15588",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1559",
+      "jaccard_nn_distance": 0.05128204822540283,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15591",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15603",
+      "jaccard_nn_distance": 0.06666666269302368,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.1561",
+      "jaccard_nn_distance": 0.054545462131500244,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1562",
+      "jaccard_nn_distance": 0.07692307233810425,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.15629",
+      "jaccard_nn_distance": 0.0546875,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.1721",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1722",
+      "jaccard_nn_distance": 0.019230782985687256,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1723",
+      "jaccard_nn_distance": 0.06956523656845093,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.1724",
+      "jaccard_nn_distance": 0.06956523656845093,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.17914",
+      "jaccard_nn_distance": 0.21476507186889648,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.17915",
+      "jaccard_nn_distance": 0.19999998807907104,
+      "absent_feature_count": 19
+    },
+    {
+      "genome_id": "573.18477",
+      "jaccard_nn_distance": 0.11570245027542114,
+      "absent_feature_count": 22
+    },
+    {
+      "genome_id": "573.2006",
+      "jaccard_nn_distance": 0.043859660625457764,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.20064",
+      "jaccard_nn_distance": 0.11333334445953369,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.23205",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.24268",
+      "jaccard_nn_distance": 0.054545462131500244,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.24275",
+      "jaccard_nn_distance": 0.09009009599685669,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.24281",
+      "jaccard_nn_distance": 0.06722688674926758,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24282",
+      "jaccard_nn_distance": 0.021582722663879395,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.24283",
+      "jaccard_nn_distance": 0.029702961444854736,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24286",
+      "jaccard_nn_distance": 0.12598425149917603,
+      "absent_feature_count": 11
+    },
+    {
+      "genome_id": "573.24301",
+      "jaccard_nn_distance": 0.13223141431808472,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.24304",
+      "jaccard_nn_distance": 0.13223141431808472,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.24309",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24322",
+      "jaccard_nn_distance": 0.17333334684371948,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.24326",
+      "jaccard_nn_distance": 0.1764705777168274,
+      "absent_feature_count": 18
+    },
+    {
+      "genome_id": "573.24328",
+      "jaccard_nn_distance": 0.20689654350280762,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "573.24329",
+      "jaccard_nn_distance": 0.12931036949157715,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.24331",
+      "jaccard_nn_distance": 0.1666666865348816,
+      "absent_feature_count": 19
+    },
+    {
+      "genome_id": "573.24333",
+      "jaccard_nn_distance": 0.1496598720550537,
+      "absent_feature_count": 16
+    },
+    {
+      "genome_id": "573.24335",
+      "jaccard_nn_distance": 0.15646260976791382,
+      "absent_feature_count": 16
+    },
+    {
+      "genome_id": "573.24338",
+      "jaccard_nn_distance": 0.12931036949157715,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.24341",
+      "jaccard_nn_distance": 0.12903225421905518,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24343",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24344",
+      "jaccard_nn_distance": 0.11666667461395264,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.24345",
+      "jaccard_nn_distance": 0.1492537260055542,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24346",
+      "jaccard_nn_distance": 0.06666666269302368,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24352",
+      "jaccard_nn_distance": 0.1459854245185852,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24356",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24357",
+      "jaccard_nn_distance": 0.12195122241973877,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24358",
+      "jaccard_nn_distance": 0.13235294818878174,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.24359",
+      "jaccard_nn_distance": 0.06666666269302368,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24363",
+      "jaccard_nn_distance": 0.11811023950576782,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24364",
+      "jaccard_nn_distance": 0.1560283899307251,
+      "absent_feature_count": 16
+    },
+    {
+      "genome_id": "573.24365",
+      "jaccard_nn_distance": 0.19863015413284302,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "573.24366",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24367",
+      "jaccard_nn_distance": 0.12931036949157715,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.24368",
+      "jaccard_nn_distance": 0.06666666269302368,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24372",
+      "jaccard_nn_distance": 0.1600000262260437,
+      "absent_feature_count": 18
+    },
+    {
+      "genome_id": "573.24374",
+      "jaccard_nn_distance": 0.11711710691452026,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24375",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.24379",
+      "jaccard_nn_distance": 0.1428571343421936,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.24382",
+      "jaccard_nn_distance": 0.06666666269302368,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24383",
+      "jaccard_nn_distance": 0.17213112115859985,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "573.24385",
+      "jaccard_nn_distance": 0.18791943788528442,
+      "absent_feature_count": 20
+    },
+    {
+      "genome_id": "573.24386",
+      "jaccard_nn_distance": 0.019999980926513672,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24389",
+      "jaccard_nn_distance": 0.16417908668518066,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24391",
+      "jaccard_nn_distance": 0.19999998807907104,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "573.24393",
+      "jaccard_nn_distance": 0.12903225421905518,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.24398",
+      "jaccard_nn_distance": 0.1586207151412964,
+      "absent_feature_count": 16
+    },
+    {
+      "genome_id": "573.24399",
+      "jaccard_nn_distance": 0.17218542098999023,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.24401",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24403",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24404",
+      "jaccard_nn_distance": 0.14166665077209473,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.24405",
+      "jaccard_nn_distance": 0.12096774578094482,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "573.24406",
+      "jaccard_nn_distance": 0.11811023950576782,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.24407",
+      "jaccard_nn_distance": 0.17073172330856323,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "573.24409",
+      "jaccard_nn_distance": 0.06862747669219971,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24412",
+      "jaccard_nn_distance": 0.1492537260055542,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24413",
+      "jaccard_nn_distance": 0.16438359022140503,
+      "absent_feature_count": 19
+    },
+    {
+      "genome_id": "573.24414",
+      "jaccard_nn_distance": 0.16107380390167236,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.24415",
+      "jaccard_nn_distance": 0.11764705181121826,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24417",
+      "jaccard_nn_distance": 0.11711710691452026,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.24418",
+      "jaccard_nn_distance": 0.1631205677986145,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.24421",
+      "jaccard_nn_distance": 0.07352942228317261,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24422",
+      "jaccard_nn_distance": 0.11711710691452026,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.24423",
+      "jaccard_nn_distance": 0.06862747669219971,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24424",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24425",
+      "jaccard_nn_distance": 0.06862747669219971,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24427",
+      "jaccard_nn_distance": 0.125,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.24432",
+      "jaccard_nn_distance": 0.1689189076423645,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.24434",
+      "jaccard_nn_distance": 0.08759123086929321,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24435",
+      "jaccard_nn_distance": 0.1492537260055542,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24436",
+      "jaccard_nn_distance": 0.1495327353477478,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24437",
+      "jaccard_nn_distance": 0.1463414430618286,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24438",
+      "jaccard_nn_distance": 0.140625,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24439",
+      "jaccard_nn_distance": 0.08695650100708008,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.24445",
+      "jaccard_nn_distance": 0.1496598720550537,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "573.24448",
+      "jaccard_nn_distance": 0.18791943788528442,
+      "absent_feature_count": 18
+    },
+    {
+      "genome_id": "573.24451",
+      "jaccard_nn_distance": 0.13821136951446533,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.24452",
+      "jaccard_nn_distance": 0.13846153020858765,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24453",
+      "jaccard_nn_distance": 0.1428571343421936,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "573.24454",
+      "jaccard_nn_distance": 0.1307692527770996,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.24455",
+      "jaccard_nn_distance": 0.11666667461395264,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.25568",
+      "jaccard_nn_distance": 0.13380283117294312,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "573.26083",
+      "jaccard_nn_distance": 0.010309278964996338,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26099",
+      "jaccard_nn_distance": 0.010204076766967773,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.26101",
+      "jaccard_nn_distance": 0.020202040672302246,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.26103",
+      "jaccard_nn_distance": 0.13571429252624512,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.26104",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26138",
+      "jaccard_nn_distance": 0.029999971389770508,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.26141",
+      "jaccard_nn_distance": 0.010204076766967773,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26142",
+      "jaccard_nn_distance": 0.11510789394378662,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.26146",
+      "jaccard_nn_distance": 0.020202040672302246,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26147",
+      "jaccard_nn_distance": 0.020408153533935547,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26159",
+      "jaccard_nn_distance": 0.04000002145767212,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.26189",
+      "jaccard_nn_distance": 0.010638296604156494,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.26196",
+      "jaccard_nn_distance": 0.16949152946472168,
+      "absent_feature_count": 6
+    },
+    {
+      "genome_id": "573.26198",
+      "jaccard_nn_distance": 0.010309278964996338,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.26202",
+      "jaccard_nn_distance": 0.029411792755126953,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.26227",
+      "jaccard_nn_distance": 0.03960394859313965,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.26233",
+      "jaccard_nn_distance": 0.010204076766967773,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26256",
+      "jaccard_nn_distance": 0.03649634122848511,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.26314",
+      "jaccard_nn_distance": 0.11009174585342407,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.26322",
+      "jaccard_nn_distance": 0.010204076766967773,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.31074",
+      "jaccard_nn_distance": 0.13868612051010132,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.34237",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.34255",
+      "jaccard_nn_distance": 0.07042253017425537,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.34262",
+      "jaccard_nn_distance": 0.010309278964996338,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.34278",
+      "jaccard_nn_distance": 0.07947021722793579,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.46096",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5623",
+      "jaccard_nn_distance": 0.09756100177764893,
+      "absent_feature_count": 16
+    },
+    {
+      "genome_id": "573.5624",
+      "jaccard_nn_distance": 0.0923076868057251,
+      "absent_feature_count": 18
+    },
+    {
+      "genome_id": "573.5645",
+      "jaccard_nn_distance": 0.0859375,
+      "absent_feature_count": 17
+    },
+    {
+      "genome_id": "573.5646",
+      "jaccard_nn_distance": 0.10000002384185791,
+      "absent_feature_count": 18
+    },
+    {
+      "genome_id": "573.5647",
+      "jaccard_nn_distance": 0.09923666715621948,
+      "absent_feature_count": 19
+    },
+    {
+      "genome_id": "573.5683",
+      "jaccard_nn_distance": 0.17525774240493774,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "573.5702",
+      "jaccard_nn_distance": 0.12222224473953247,
+      "absent_feature_count": 24
+    },
+    {
+      "genome_id": "573.5724",
+      "jaccard_nn_distance": 0.09782606363296509,
+      "absent_feature_count": 27
+    },
+    {
+      "genome_id": "573.5763",
+      "jaccard_nn_distance": 0.10924369096755981,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5764",
+      "jaccard_nn_distance": 0.11570245027542114,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5765",
+      "jaccard_nn_distance": 0.13385826349258423,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5767",
+      "jaccard_nn_distance": 0.10084033012390137,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5768",
+      "jaccard_nn_distance": 0.1260504126548767,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.5777",
+      "jaccard_nn_distance": 0.11570245027542114,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5778",
+      "jaccard_nn_distance": 0.1463414430618286,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5781",
+      "jaccard_nn_distance": 0.11811023950576782,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.5814",
+      "jaccard_nn_distance": 0.08163267374038696,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "573.5815",
+      "jaccard_nn_distance": 0.0873786211013794,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "573.5816",
+      "jaccard_nn_distance": 0.030927836894989014,
+      "absent_feature_count": 16
+    },
+    {
+      "genome_id": "573.5819",
+      "jaccard_nn_distance": 0.13084113597869873,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "573.5828",
+      "jaccard_nn_distance": 0.1538461446762085,
+      "absent_feature_count": 8
+    },
+    {
+      "genome_id": "573.66229",
+      "jaccard_nn_distance": 0.16129034757614136,
+      "absent_feature_count": 11
+    },
+    {
+      "genome_id": "573.66436",
+      "jaccard_nn_distance": 0.14788734912872314,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "573.66471",
+      "jaccard_nn_distance": 0.1268656849861145,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66476",
+      "jaccard_nn_distance": 0.1582278609275818,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "573.66552",
+      "jaccard_nn_distance": 0.13571429252624512,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66554",
+      "jaccard_nn_distance": 0.12765955924987793,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66568",
+      "jaccard_nn_distance": 0.08474576473236084,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66587",
+      "jaccard_nn_distance": 0.05309736728668213,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66597",
+      "jaccard_nn_distance": 0.04901963472366333,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66599",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66612",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66617",
+      "jaccard_nn_distance": 0.07826089859008789,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66621",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66625",
+      "jaccard_nn_distance": 0.01086956262588501,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66631",
+      "jaccard_nn_distance": 0.029411792755126953,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66643",
+      "jaccard_nn_distance": 0.010416686534881592,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66651",
+      "jaccard_nn_distance": 0.07826089859008789,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66658",
+      "jaccard_nn_distance": 0.010416686534881592,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66664",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66667",
+      "jaccard_nn_distance": 0.08064514398574829,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66685",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66689",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66704",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66726",
+      "jaccard_nn_distance": 0.010989010334014893,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66728",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66729",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66736",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66738",
+      "jaccard_nn_distance": 0.07826089859008789,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66741",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66742",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66743",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66748",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66769",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66786",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66788",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66826",
+      "jaccard_nn_distance": 0.08474576473236084,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66836",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66847",
+      "jaccard_nn_distance": 0.010204076766967773,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.66859",
+      "jaccard_nn_distance": 0.07438015937805176,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66879",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66881",
+      "jaccard_nn_distance": 0.05982905626296997,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66888",
+      "jaccard_nn_distance": 0.17419356107711792,
+      "absent_feature_count": 9
+    },
+    {
+      "genome_id": "573.66889",
+      "jaccard_nn_distance": 0.0625,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66891",
+      "jaccard_nn_distance": 0.16233766078948975,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "573.66911",
+      "jaccard_nn_distance": 0.0625,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66913",
+      "jaccard_nn_distance": 0.09554141759872437,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66915",
+      "jaccard_nn_distance": 0.018691599369049072,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.66919",
+      "jaccard_nn_distance": 0.16233766078948975,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "573.66927",
+      "jaccard_nn_distance": 0.03125,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66929",
+      "jaccard_nn_distance": 0.02189779281616211,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66933",
+      "jaccard_nn_distance": 0.03960394859313965,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66934",
+      "jaccard_nn_distance": 0.15686273574829102,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66941",
+      "jaccard_nn_distance": 0.02189779281616211,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66947",
+      "jaccard_nn_distance": 0.028846144676208496,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66972",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.66974",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66975",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.66978",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67003",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67008",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67012",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.67015",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67017",
+      "jaccard_nn_distance": 0.00961536169052124,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67056",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67062",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67067",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67087",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67102",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.67111",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67115",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67134",
+      "jaccard_nn_distance": 0.0625,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67148",
+      "jaccard_nn_distance": 0.1066666841506958,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67149",
+      "jaccard_nn_distance": 0.07333332300186157,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67155",
+      "jaccard_nn_distance": 0.0625,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67156",
+      "jaccard_nn_distance": 0.11564624309539795,
+      "absent_feature_count": 5
+    },
+    {
+      "genome_id": "573.67159",
+      "jaccard_nn_distance": 0.04040402173995972,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.67167",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67173",
+      "jaccard_nn_distance": 0.0625,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67175",
+      "jaccard_nn_distance": 0.10769230127334595,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.67176",
+      "jaccard_nn_distance": 0.11678832769393921,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.7024",
+      "jaccard_nn_distance": 0.04237288236618042,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.7027",
+      "jaccard_nn_distance": 0.052173912525177,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "573.7028",
+      "jaccard_nn_distance": 0.08547008037567139,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.7029",
+      "jaccard_nn_distance": 0.08547008037567139,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "573.7032",
+      "jaccard_nn_distance": 0.11538463830947876,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "573.9724",
+      "jaccard_nn_distance": 0.09923666715621948,
+      "absent_feature_count": 7
+    },
+    {
+      "genome_id": "72407.478",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.482",
+      "jaccard_nn_distance": 0.007874011993408203,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.485",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.488",
+      "jaccard_nn_distance": 0.01526719331741333,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.502",
+      "jaccard_nn_distance": 0.015748023986816406,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.522",
+      "jaccard_nn_distance": 0.017241358757019043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.523",
+      "jaccard_nn_distance": 0.017241358757019043,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.533",
+      "jaccard_nn_distance": 0.007936537265777588,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.535",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "72407.576",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 3
+    },
+    {
+      "genome_id": "72407.693",
+      "jaccard_nn_distance": 0.4017857313156128,
+      "absent_feature_count": 4
+    },
+    {
+      "genome_id": "1284787.3",
+      "jaccard_nn_distance": 0.09375,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284788.3",
+      "jaccard_nn_distance": 0.07446807622909546,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284789.4",
+      "jaccard_nn_distance": 0.011111140251159668,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1284790.3",
+      "jaccard_nn_distance": 0.22522521018981934,
+      "absent_feature_count": 11
+    },
+    {
+      "genome_id": "1284791.4",
+      "jaccard_nn_distance": 0.07446807622909546,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284792.4",
+      "jaccard_nn_distance": 0.09375,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284793.4",
+      "jaccard_nn_distance": 0.08510637283325195,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284794.4",
+      "jaccard_nn_distance": 0.11458331346511841,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284795.4",
+      "jaccard_nn_distance": 0.11224490404129028,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284796.3",
+      "jaccard_nn_distance": 0.1834862232208252,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "1284797.4",
+      "jaccard_nn_distance": 0.11702126264572144,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "1284798.4",
+      "jaccard_nn_distance": 0.08421051502227783,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284799.4",
+      "jaccard_nn_distance": 0.125,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "1284800.4",
+      "jaccard_nn_distance": 0.011111140251159668,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1284801.3",
+      "jaccard_nn_distance": 0.17543858289718628,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1284802.4",
+      "jaccard_nn_distance": 0.07446807622909546,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284803.4",
+      "jaccard_nn_distance": 0.1634615659713745,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284804.4",
+      "jaccard_nn_distance": 0.08510637283325195,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284805.4",
+      "jaccard_nn_distance": 0.10309278964996338,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284806.4",
+      "jaccard_nn_distance": 0.155339777469635,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284807.4",
+      "jaccard_nn_distance": 0.02222222089767456,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284808.4",
+      "jaccard_nn_distance": 0.011111140251159668,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1284809.4",
+      "jaccard_nn_distance": 0.10309278964996338,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284810.3",
+      "jaccard_nn_distance": 0.07446807622909546,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284814.3",
+      "jaccard_nn_distance": 0.2719298005104065,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "1284815.3",
+      "jaccard_nn_distance": 0.011111140251159668,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1284816.3",
+      "jaccard_nn_distance": 0.06451612710952759,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284819.3",
+      "jaccard_nn_distance": 0.15789473056793213,
+      "absent_feature_count": 11
+    },
+    {
+      "genome_id": "1284820.3",
+      "jaccard_nn_distance": 0.182692289352417,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284821.3",
+      "jaccard_nn_distance": 0.04395604133605957,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284822.3",
+      "jaccard_nn_distance": 0.2368420958518982,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284824.3",
+      "jaccard_nn_distance": 0.12244898080825806,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "1284825.3",
+      "jaccard_nn_distance": 0.08421051502227783,
+      "absent_feature_count": 14
+    },
+    {
+      "genome_id": "1284826.3",
+      "jaccard_nn_distance": 0.08510637283325195,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284827.3",
+      "jaccard_nn_distance": 0.2321428656578064,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "1284828.3",
+      "jaccard_nn_distance": 0.08510637283325195,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284829.3",
+      "jaccard_nn_distance": 0.09375,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284830.3",
+      "jaccard_nn_distance": 0.09375,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1284831.3",
+      "jaccard_nn_distance": 0.10309278964996338,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1284832.3",
+      "jaccard_nn_distance": 0.09375,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1304916.4",
+      "jaccard_nn_distance": 0.07446807622909546,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1304917.4",
+      "jaccard_nn_distance": 0.16326528787612915,
+      "absent_feature_count": 10
+    },
+    {
+      "genome_id": "1304918.4",
+      "jaccard_nn_distance": 0.07446807622909546,
+      "absent_feature_count": 13
+    },
+    {
+      "genome_id": "1304919.4",
+      "jaccard_nn_distance": 0.011111140251159668,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1304920.3",
+      "jaccard_nn_distance": 0.03296703100204468,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1304921.4",
+      "jaccard_nn_distance": 0.06382977962493896,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1304922.3",
+      "jaccard_nn_distance": 0.02222222089767456,
+      "absent_feature_count": 12
+    },
+    {
+      "genome_id": "1304923.3",
+      "jaccard_nn_distance": 0.21698111295700073,
+      "absent_feature_count": 15
+    },
+    {
+      "genome_id": "1438712.3",
+      "jaccard_nn_distance": 0.00892859697341919,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438715.3",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438717.3",
+      "jaccard_nn_distance": 0.03571426868438721,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438720.3",
+      "jaccard_nn_distance": 0.027027010917663574,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438725.3",
+      "jaccard_nn_distance": 0.0,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438727.3",
+      "jaccard_nn_distance": 0.019801974296569824,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438729.3",
+      "jaccard_nn_distance": 0.026785731315612793,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438731.3",
+      "jaccard_nn_distance": 0.00892859697341919,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438734.3",
+      "jaccard_nn_distance": 0.00892859697341919,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438737.3",
+      "jaccard_nn_distance": 0.018018007278442383,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438738.3",
+      "jaccard_nn_distance": 0.017857134342193604,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438744.3",
+      "jaccard_nn_distance": 0.017857134342193604,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438747.3",
+      "jaccard_nn_distance": 0.017857134342193604,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438752.3",
+      "jaccard_nn_distance": 0.027027010917663574,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438754.3",
+      "jaccard_nn_distance": 0.06722688674926758,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438757.3",
+      "jaccard_nn_distance": 0.054054081439971924,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438766.3",
+      "jaccard_nn_distance": 0.04504501819610596,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438767.3",
+      "jaccard_nn_distance": 0.027027010917663574,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438774.3",
+      "jaccard_nn_distance": 0.017857134342193604,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438775.3",
+      "jaccard_nn_distance": 0.00892859697341919,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438778.3",
+      "jaccard_nn_distance": 0.00892859697341919,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438779.3",
+      "jaccard_nn_distance": 0.017857134342193604,
+      "absent_feature_count": 2
+    },
+    {
+      "genome_id": "1438780.3",
+      "jaccard_nn_distance": 0.00892859697341919,
+      "absent_feature_count": 2
+    }
+  ]
+}

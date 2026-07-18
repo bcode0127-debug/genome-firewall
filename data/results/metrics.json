@@ -1,0 +1,352 @@
+{
+  "drugs": {
+    "meropenem": {
+      "winner_variant": "A_unweighted",
+      "winner_C": 0.1,
+      "brier_calibration_before": 0.05275722222960828,
+      "brier_calibration_after": 0.04382909855276754,
+      "test_overall": {
+        "n": 779,
+        "balanced_accuracy": 0.9262163765822784,
+        "recall_resistant": 0.9696202531645569,
+        "recall_susceptible": 0.8828125,
+        "f1_resistant_positive": 0.9307411907654921,
+        "auroc": 0.9438818565400844,
+        "pr_auc_positive_class_resistant": 0.911155707734203,
+        "brier": 0.0805054524170936,
+        "no_call_rate": 0.04236200256739409,
+        "accuracy_on_non_abstained": 0.9369973190348525
+      },
+      "test_by_group": {
+        "MLST.Klebsiella_pneumoniae.258": {
+          "n": 509,
+          "balanced_accuracy": 0.9006402048655571,
+          "recall_resistant": 0.9830985915492958,
+          "recall_susceptible": 0.8181818181818182,
+          "f1_resistant_positive": 0.953551912568306,
+          "auroc": 0.8903146149625023,
+          "pr_auc_positive_class_resistant": 0.9167905632033366,
+          "brier": 0.09333663992291964,
+          "no_call_rate": 0.005893909626719057,
+          "accuracy_on_non_abstained": 0.9347826086956522
+        },
+        "MLST.Klebsiella_pneumoniae.37": {
+          "n": 73,
+          "balanced_accuracy": 0.946969696969697,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.8939393939393939,
+          "f1_resistant_positive": 0.6666666666666666,
+          "auroc": 0.9848484848484849,
+          "pr_auc_positive_class_resistant": 0.9285714285714284,
+          "brier": 0.048362071805806775,
+          "no_call_rate": 0.0821917808219178,
+          "accuracy_on_non_abstained": 0.9253731343283582
+        },
+        "MLST.Klebsiella_pneumoniae.45": {
+          "n": 43,
+          "balanced_accuracy": 0.6868421052631579,
+          "recall_resistant": 0.4,
+          "recall_susceptible": 0.9736842105263158,
+          "f1_resistant_positive": 0.5,
+          "auroc": 0.8315789473684211,
+          "pr_auc_positive_class_resistant": 0.5914285714285714,
+          "brier": 0.07338973085639379,
+          "no_call_rate": 0.16279069767441862,
+          "accuracy_on_non_abstained": 0.9166666666666666
+        },
+        "MLST.Klebsiella_pneumoniae.17": {
+          "n": 31,
+          "balanced_accuracy": 0.95,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.9,
+          "f1_resistant_positive": 0.4,
+          "auroc": 1.0,
+          "pr_auc_positive_class_resistant": 1.0,
+          "brier": 0.04325026317382412,
+          "no_call_rate": 0.03225806451612903,
+          "accuracy_on_non_abstained": 0.9
+        },
+        "MLST.Klebsiella_pneumoniae.35": {
+          "n": 29,
+          "balanced_accuracy": 0.5,
+          "recall_resistant": 0.0,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.0,
+          "auroc": 0.8148148148148148,
+          "pr_auc_positive_class_resistant": 0.17142857142857143,
+          "brier": 0.06116538749120338,
+          "no_call_rate": 0.1724137931034483,
+          "accuracy_on_non_abstained": 0.9583333333333334
+        },
+        "MLST.Klebsiella_pneumoniae.25": {
+          "n": 22,
+          "balanced_accuracy": 1.0,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 1.0,
+          "auroc": 1.0,
+          "pr_auc_positive_class_resistant": 1.0,
+          "brier": 0.002713783034010567,
+          "no_call_rate": 0.045454545454545456,
+          "accuracy_on_non_abstained": 1.0
+        },
+        "MLST.Klebsiella_pneumoniae.340": {
+          "n": 22,
+          "balanced_accuracy": 0.7222222222222222,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.4444444444444444,
+          "f1_resistant_positive": 0.8387096774193549,
+          "auroc": 0.9358974358974359,
+          "pr_auc_positive_class_resistant": 0.9537087912087912,
+          "brier": 0.13525875775939067,
+          "no_call_rate": 0.45454545454545453,
+          "accuracy_on_non_abstained": 1.0
+        },
+        "MLST.Klebsiella_pneumoniae.392": {
+          "n": 21,
+          "balanced_accuracy": 0.9722222222222222,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.9444444444444444,
+          "f1_resistant_positive": 0.8571428571428571,
+          "auroc": 0.9629629629629629,
+          "pr_auc_positive_class_resistant": 0.6944444444444444,
+          "brier": 0.04155280048670294,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 0.9523809523809523
+        }
+      }
+    },
+    "ceftazidime": {
+      "winner_variant": "B_balanced",
+      "winner_C": 1.0,
+      "brier_calibration_before": 0.06818739639709753,
+      "brier_calibration_after": 0.061686637016332875,
+      "test_overall": {
+        "n": 779,
+        "balanced_accuracy": 0.8984653452652632,
+        "recall_resistant": 0.9409984871406959,
+        "recall_susceptible": 0.8559322033898306,
+        "f1_resistant_positive": 0.9569230769230769,
+        "auroc": 0.947114028564835,
+        "pr_auc_positive_class_resistant": 0.9842146613431461,
+        "brier": 0.06024465452593187,
+        "no_call_rate": 0.0410783055198973,
+        "accuracy_on_non_abstained": 0.9397590361445783
+      },
+      "test_by_group": {
+        "MLST.Klebsiella_pneumoniae.258": {
+          "n": 509,
+          "balanced_accuracy": 0.48406374501992033,
+          "recall_resistant": 0.9681274900398407,
+          "recall_susceptible": 0.0,
+          "f1_resistant_positive": 0.9768844221105528,
+          "auroc": 0.5421172453044963,
+          "pr_auc_positive_class_resistant": 0.9881547059769752,
+          "brier": 0.04412743364772146,
+          "no_call_rate": 0.0412573673870334,
+          "accuracy_on_non_abstained": 0.9672131147540983
+        },
+        "MLST.Klebsiella_pneumoniae.37": {
+          "n": 73,
+          "balanced_accuracy": 0.8360215053763441,
+          "recall_resistant": 0.8387096774193549,
+          "recall_susceptible": 0.8333333333333334,
+          "f1_resistant_positive": 0.8125,
+          "auroc": 0.9101382488479263,
+          "pr_auc_positive_class_resistant": 0.8776054638424073,
+          "brier": 0.1268254230871607,
+          "no_call_rate": 0.0684931506849315,
+          "accuracy_on_non_abstained": 0.8382352941176471
+        },
+        "MLST.Klebsiella_pneumoniae.45": {
+          "n": 43,
+          "balanced_accuracy": 0.8761574074074074,
+          "recall_resistant": 0.8148148148148148,
+          "recall_susceptible": 0.9375,
+          "f1_resistant_positive": 0.88,
+          "auroc": 0.9525462962962962,
+          "pr_auc_positive_class_resistant": 0.9652919032686387,
+          "brier": 0.09623843315246447,
+          "no_call_rate": 0.023255813953488372,
+          "accuracy_on_non_abstained": 0.8809523809523809
+        },
+        "MLST.Klebsiella_pneumoniae.17": {
+          "n": 31,
+          "balanced_accuracy": 0.868421052631579,
+          "recall_resistant": 0.7368421052631579,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.8484848484848485,
+          "auroc": 0.956140350877193,
+          "pr_auc_positive_class_resistant": 0.964114832535885,
+          "brier": 0.12342573105754132,
+          "no_call_rate": 0.0967741935483871,
+          "accuracy_on_non_abstained": 0.8214285714285714
+        },
+        "MLST.Klebsiella_pneumoniae.35": {
+          "n": 29,
+          "balanced_accuracy": 0.8181818181818181,
+          "recall_resistant": 0.6363636363636364,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.7777777777777778,
+          "auroc": 0.8989898989898989,
+          "pr_auc_positive_class_resistant": 0.8268398268398268,
+          "brier": 0.10307682753160308,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 0.8620689655172413
+        },
+        "MLST.Klebsiella_pneumoniae.25": {
+          "n": 22,
+          "balanced_accuracy": 1.0,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 1.0,
+          "auroc": 1.0,
+          "pr_auc_positive_class_resistant": 1.0,
+          "brier": 0.01698819345706077,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 1.0
+        },
+        "MLST.Klebsiella_pneumoniae.340": {
+          "n": 22,
+          "balanced_accuracy": 1.0,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.0,
+          "f1_resistant_positive": 1.0,
+          "auroc": NaN,
+          "pr_auc_positive_class_resistant": 1.0,
+          "brier": 0.016456672494941912,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 1.0
+        },
+        "MLST.Klebsiella_pneumoniae.392": {
+          "n": 21,
+          "balanced_accuracy": 0.5,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.0,
+          "f1_resistant_positive": 0.975609756097561,
+          "auroc": 1.0,
+          "pr_auc_positive_class_resistant": 1.0,
+          "brier": 0.014926844751021729,
+          "no_call_rate": 0.047619047619047616,
+          "accuracy_on_non_abstained": 1.0
+        }
+      }
+    },
+    "gentamicin": {
+      "winner_variant": "B_balanced",
+      "winner_C": 0.1,
+      "brier_calibration_before": 0.03798038446430665,
+      "brier_calibration_after": 0.033444814109917585,
+      "test_overall": {
+        "n": 779,
+        "balanced_accuracy": 0.8247126436781609,
+        "recall_resistant": 0.7456140350877193,
+        "recall_susceptible": 0.9038112522686026,
+        "f1_resistant_positive": 0.753880266075388,
+        "auroc": 0.8751432801604738,
+        "pr_auc_positive_class_resistant": 0.7949626165046503,
+        "brier": 0.11466437920641426,
+        "no_call_rate": 0.02053915275994865,
+        "accuracy_on_non_abstained": 0.7391874180865007
+      },
+      "test_by_group": {
+        "MLST.Klebsiella_pneumoniae.258": {
+          "n": 509,
+          "balanced_accuracy": 0.7599971142350661,
+          "recall_resistant": 0.6377952755905512,
+          "recall_susceptible": 0.8821989528795812,
+          "f1_resistant_positive": 0.6403162055335968,
+          "auroc": 0.7914416457105167,
+          "pr_auc_positive_class_resistant": 0.6720720547748473,
+          "brier": 0.14363455234090902,
+          "no_call_rate": 0.021611001964636542,
+          "accuracy_on_non_abstained": 0.6485943775100401
+        },
+        "MLST.Klebsiella_pneumoniae.37": {
+          "n": 73,
+          "balanced_accuracy": 0.8997252747252746,
+          "recall_resistant": 0.8571428571428571,
+          "recall_susceptible": 0.9423076923076923,
+          "f1_resistant_positive": 0.8571428571428571,
+          "auroc": 0.9743589743589743,
+          "pr_auc_positive_class_resistant": 0.9152083822034561,
+          "brier": 0.06083104300476166,
+          "no_call_rate": 0.0410958904109589,
+          "accuracy_on_non_abstained": 0.9142857142857143
+        },
+        "MLST.Klebsiella_pneumoniae.45": {
+          "n": 43,
+          "balanced_accuracy": 1.0,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 1.0,
+          "auroc": 1.0,
+          "pr_auc_positive_class_resistant": 0.9999999999999999,
+          "brier": 0.005441001206347242,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 0.9534883720930233
+        },
+        "MLST.Klebsiella_pneumoniae.17": {
+          "n": 31,
+          "balanced_accuracy": 0.8571428571428572,
+          "recall_resistant": 0.7142857142857143,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.8333333333333334,
+          "auroc": 0.9077380952380953,
+          "pr_auc_positive_class_resistant": 0.8357142857142857,
+          "brier": 0.06334010429193641,
+          "no_call_rate": 0.03225806451612903,
+          "accuracy_on_non_abstained": 0.9
+        },
+        "MLST.Klebsiella_pneumoniae.35": {
+          "n": 29,
+          "balanced_accuracy": 0.75,
+          "recall_resistant": 0.5,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.6666666666666666,
+          "auroc": 0.8840579710144927,
+          "pr_auc_positive_class_resistant": 0.7719298245614035,
+          "brier": 0.0933856211308167,
+          "no_call_rate": 0.034482758620689655,
+          "accuracy_on_non_abstained": 0.9285714285714286
+        },
+        "MLST.Klebsiella_pneumoniae.25": {
+          "n": 22,
+          "balanced_accuracy": 0.9615384615384616,
+          "recall_resistant": 0.9230769230769231,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.96,
+          "auroc": 0.9743589743589743,
+          "pr_auc_positive_class_resistant": 0.9786324786324787,
+          "brier": 0.04297770834074021,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 0.9545454545454546
+        },
+        "MLST.Klebsiella_pneumoniae.340": {
+          "n": 22,
+          "balanced_accuracy": 0.9523809523809523,
+          "recall_resistant": 0.9047619047619048,
+          "recall_susceptible": 1.0,
+          "f1_resistant_positive": 0.95,
+          "auroc": 0.9285714285714286,
+          "pr_auc_positive_class_resistant": 0.9955679241393527,
+          "brier": 0.06489372642389414,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 0.9090909090909091
+        },
+        "MLST.Klebsiella_pneumoniae.392": {
+          "n": 21,
+          "balanced_accuracy": 0.5,
+          "recall_resistant": 1.0,
+          "recall_susceptible": 0.0,
+          "f1_resistant_positive": 0.8947368421052632,
+          "auroc": 0.75,
+          "pr_auc_positive_class_resistant": 0.9317295545669249,
+          "brier": 0.13064162781391958,
+          "no_call_rate": 0.0,
+          "accuracy_on_non_abstained": 0.8095238095238095
+        }
+      }
+    }
+  }
+}
