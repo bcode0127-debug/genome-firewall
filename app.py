@@ -206,6 +206,7 @@ def parse_amrfinder_tsv(uploaded, feature_cols):
     df = pd.read_csv(uploaded, sep="\t")
     symcol = next((c for c in df.columns
                    if c.lower() in ("element symbol", "gene symbol", "gene")), None)
+    namecol = next((c for c in df.columns if c.lower() == "element name"), None)
     subcol = next((c for c in df.columns if c.lower() == "subtype"), None)
     if symcol is None:
         return None, None
@@ -226,7 +227,21 @@ def parse_amrfinder_tsv(uploaded, feature_cols):
         col_norm = re.sub(r"[^a-z0-9]", "", col.lower())
         if any(ns and ns in col_norm for ns in norm_syms):
             vec[i] = 1.0
-    return vec, symbols
+
+    # Determinant-facing gene names, built directly from the TSV. Strip the
+    # 'bla' beta-lactamase prefix so the SAME word-boundary determinant regexes
+    # (e.g. \bkpc\b) match AMRFinderPlus's 'blaKPC-3' style symbols — without
+    # this, 'blaKPC-3' has no word boundary before 'KPC' and every uploaded
+    # beta-lactamase silently fell through to evidence category (ii). Fall back
+    # to the Element name column when a row's symbol is blank.
+    gene_names = []
+    for _, r in rows.iterrows():
+        sym = str(r[symcol]).strip() if pd.notna(r[symcol]) else ""
+        if sym and sym.lower() != "nan":
+            gene_names.append(re.sub(r"(?i)^bla", "", sym))
+        elif namecol is not None and pd.notna(r[namecol]):
+            gene_names.append(str(r[namecol]).strip())
+    return vec, gene_names
 
 
 # ----------------------------- TAB 1: Report -----------------------------
