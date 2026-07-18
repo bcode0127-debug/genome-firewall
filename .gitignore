@@ -10,3 +10,4 @@ __pycache__/
 data/*
 !data/results/
 !data/results/**
+!data/drug_properties.yaml

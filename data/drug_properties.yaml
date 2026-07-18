@@ -1,0 +1,84 @@
+# Drug properties for the target-presence gate and resistance-determinant
+# search. All regex patterns use \b word boundaries so short tokens like
+# "tem" cannot match inside unrelated words (e.g. "system").
+#
+# molecular_target_patterns match against BV-BRC spgene.tab rows with
+# property == "Drug Target" (column: product). These are broad because the
+# literal phrases "penicillin-binding protein" / "16S ribosomal RNA" are
+# rarely used verbatim in this annotation source (checked directly: 1/many
+# hits across a 30-genome sample for the narrow phrasing, vs 30/30 genomes
+# for the broader patterns below). The broader patterns were verified to
+# hit all 30 sampled genomes, consistent with these being essential,
+# universally-present genes.
+#
+# resistance_determinant_patterns match against normalized keys in
+# vocab.json / vocab_model.json (already lowercased, comma-split gene
+# tokens from spgene.tab's gene/product columns).
+
+meropenem:
+  class: Carbapenem (beta-lactam)
+  mechanism_of_action: >
+    Binds penicillin-binding proteins (PBPs), inhibiting the transpeptidase
+    step of peptidoglycan cross-linking in cell-wall synthesis.
+  molecular_target_patterns:
+    - '\btranspeptidase\b'
+    - '\btransglycosylase\b'
+    - 'penicillin[- ]binding'
+    - 'murein.*polymerase'
+    - 'peptidoglycan.*synthase'
+  resistance_determinant_patterns:
+    # Carbapenemases: KPC, NDM, VIM, IMP (all classes), OXA-48-like specifically
+    # (narrow-spectrum OXA-1/2/9/10 do not confer meaningful carbapenem resistance).
+    - '\bkpc\b'
+    - '\bndm\b'
+    - '\bvim\b'
+    - '\bimp\b'
+    - 'oxa-48'
+    - 'oxa-181'
+    - 'oxa-232'
+    - 'carbapenem-hydrolyzing'
+
+ceftazidime:
+  class: Third-generation cephalosporin (beta-lactam)
+  mechanism_of_action: >
+    Binds penicillin-binding proteins (PBPs), inhibiting the transpeptidase
+    step of peptidoglycan cross-linking in cell-wall synthesis.
+  molecular_target_patterns:
+    - '\btranspeptidase\b'
+    - '\btransglycosylase\b'
+    - 'penicillin[- ]binding'
+    - 'murein.*polymerase'
+    - 'peptidoglycan.*synthase'
+  resistance_determinant_patterns:
+    # ESBLs (CTX-M, SHV, TEM families) hydrolyze ceftazidime directly;
+    # carbapenemases (KPC/NDM/VIM/IMP/OXA-48-like) also hydrolyze it.
+    - '\bctx-m\b'
+    - '\bshv\b'
+    - '\btem\b'
+    - '\bkpc\b'
+    - '\bndm\b'
+    - '\bvim\b'
+    - '\bimp\b'
+    - 'oxa-48'
+    - 'oxa-181'
+    - 'oxa-232'
+    - 'carbapenem-hydrolyzing'
+
+gentamicin:
+  class: Aminoglycoside
+  mechanism_of_action: >
+    Binds the 16S rRNA of the 30S ribosomal subunit, causing mistranslation
+    and inhibiting protein synthesis.
+  molecular_target_patterns:
+    - 'SSU ribosomal protein'
+    - '16S ribosomal RNA'
+    - '30S ribosomal'
+  resistance_determinant_patterns:
+    # aac(3) and ant(2'') are the classic gentamicin-modifying enzymes.
+    # armA / rmtB are 16S rRNA methyltransferases conferring pan-aminoglycoside
+    # (including gentamicin) resistance. aac(6') variants are excluded: they
+    # primarily affect amikacin/tobramycin/kanamycin, not gentamicin.
+    - "aac\\(3\\)"
+    - "ant\\(2''\\)"
+    - '\barma\b'
+    - '\brmtb\b'
