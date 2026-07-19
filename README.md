@@ -57,3 +57,28 @@ examples/             sample inputs
 One species, three of 74 antibiotics. Gene presence/absence
 only. Research prototype — every result requires confirmation
 by standard laboratory testing.
+
+## License and data attribution
+
+Code in this repository is MIT licensed (see LICENSE).
+
+This repository does not redistribute source genomic data.
+`data/raw/` and `data/interim/` are gitignored; only derived
+model artifacts, results, and two example annotation files
+are committed.
+
+**Data sources**
+- **BV-BRC** (Bacterial and Viral Bioinformatics Resource
+  Center, formerly PATRIC) — laboratory-measured antimicrobial
+  susceptibility phenotypes and genome annotations. Public
+  data, freely available. https://www.bv-brc.org
+- **NCBI AMRFinderPlus** (v4.2.7, database 2026-05-15.1) —
+  resistance gene annotation. Public domain, unrestricted.
+  https://github.com/ncbi/amr
+- **Mash** (v2.3) — genome distance estimation for homology
+  validation.
+
+BV-BRC specialty-gene annotations draw on several upstream
+databases including CARD and NDARO. Their respective terms
+govern any reuse of that underlying data. Users obtaining
+source data directly should consult those terms.
