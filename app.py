@@ -157,7 +157,7 @@ NOVELTY_LIFT_TEXT = {
 
 # ----------------------------- OpenAI explainer -----------------------------
 
-def openai_explanation(drug, verdict, confidence, evidence_label, gene_names):
+def openai_explanation(drug, verdict, confidence, evidence_label, gene_names, category):
     """Additive narration. Sends STRUCTURED RESULT ONLY. Never raises."""
     try:
         api_key = st.secrets.get("OPENAI_API_KEY", None)
@@ -174,13 +174,28 @@ def openai_explanation(drug, verdict, confidence, evidence_label, gene_names):
             "evidence_category": evidence_label,
             "supporting_genes": gene_names,
         }
-        prompt = (
-            "You are given a FIXED, already-decided antibiotic-susceptibility "
-            "prediction as structured JSON. Do NOT change or second-guess the "
-            "verdict. In exactly two sentences, explain the likely biological "
-            "mechanism in plain language for a clinician. Structured result:\n"
-            + json.dumps(payload)
-        )
+        if category == "ii":
+            # No known determinant matched. Do NOT let the model invent a
+            # mechanism — the listed genes are statistical associations only.
+            prompt = (
+                "You are given a FIXED, already-decided antibiotic-susceptibility "
+                "prediction as structured JSON. Do NOT change or second-guess the "
+                "verdict. This is evidence category (ii): NO known resistance "
+                "determinant for this drug was found. In exactly two sentences, "
+                "state that no known determinant matched and that the listed genes "
+                "are statistical associations with no established causal role for "
+                "this drug. Do NOT describe a biological mechanism and do NOT imply "
+                "the listed genes cause resistance to this drug. Structured "
+                "result:\n" + json.dumps(payload)
+            )
+        else:
+            prompt = (
+                "You are given a FIXED, already-decided antibiotic-susceptibility "
+                "prediction as structured JSON. Do NOT change or second-guess the "
+                "verdict. In exactly two sentences, explain the likely biological "
+                "mechanism in plain language for a clinician. Structured result:\n"
+                + json.dumps(payload)
+            )
         resp = client.chat.completions.create(
             model="gpt-4o-mini",
             temperature=0,
@@ -349,7 +364,7 @@ def tab_report(models, conformal, drug_props, demo, feature_cols):
             # OpenAI explainer — additive, after verdict is fixed
             narration = openai_explanation(
                 drug, verdict, confidence, cat_label, det_hits or [f for f, _ in
-                top_contributing_features(model, feature_vec, feature_cols, 3)])
+                top_contributing_features(model, feature_vec, feature_cols, 3)], cat)
             if narration:
                 st.markdown("**AI-generated explanation** "
                             "*(describes the result; does not produce it)*")
@@ -390,8 +405,13 @@ def tab_performance(metrics, conformal):
             f"Susceptible {c['coverage_susceptible']:.3f})."
         )
         if drug == "gentamicin":
-            st.caption("Gentamicin uses alpha=0.05 to reach nominal coverage; the "
-                       "cost is a ~29% no-call rate, stated openly.")
+            st.caption("Gentamicin abstains on 28.9% of cases (225/779) at "
+                       "alpha=0.05 (chosen empirically). Overall coverage is 0.891, "
+                       "still short of the 0.90 nominal. Most abstentions come from "
+                       "a single isotonic plateau at P=0.227 inside the both-labels "
+                       "band — a property of the calibration curve, not per-case "
+                       "uncertainty. Excluding both-label abstentions, singleton "
+                       "coverage is 0.847.")
 
         # reliability plot
         rel = d["reliability"]
@@ -446,10 +466,16 @@ def tab_responsibility(metrics):
 
     st.markdown("#### 2. Honest generalization")
     st.markdown(
-        "Train/calibration/test are split by **MLST sequence type (GroupKFold)** "
-        "so near-identical clones cannot leak across splits. **ST258 is held out "
-        "of training entirely** and reported as its own group. Per-group results "
-        "are on the Performance tab.")
+        "Train/calibration/test are split by **MLST sequence type (GroupKFold)**. "
+        "ST258 is held out by sequence type. Its clonal-complex relative **ST437 "
+        "remains in training** at a minimum Mash distance of **0.0034** — closer "
+        "than our own within-ST maximum of **0.0081**. MLST grouping does not "
+        "separate single-locus variants within a clonal complex, and our own "
+        "validation records `mlst_grouping_consistent: false`. At our recommended "
+        "0.00576 threshold, ~200 ST437/ST258 pairs cross the split. Meropenem "
+        "still holds on ST258 (bal. acc. 0.901, AUROC 0.890); **ceftazidime does "
+        "not (0.484 / 0.542)**, where the clone is ~97% resistant and the model "
+        "rides that base rate. Per-group results are on the Performance tab.")
 
     st.markdown("#### 3. Calibrated confidence and honest no-call")
     rows = []
@@ -462,8 +488,20 @@ def tab_responsibility(metrics):
     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
     st.markdown(
         "Isotonic calibration + class-conditional conformal prediction. "
-        "**Gentamicin openly trades a ~29% no-call rate (alpha=0.05) to reach "
-        "nominal coverage** — abstention is treated as a strength, not a failure.")
+        "Split conformal's guarantee assumes calibration and test are "
+        "**exchangeable**; our MLST group split deliberately breaks that. "
+        "Class-conditional coverage **misses on every drug** (meropenem "
+        "susceptible 0.836, ceftazidime susceptible 0.822, gentamicin resistant "
+        "0.860). We report the **measured** coverage, not the theoretical "
+        "guarantee.")
+    st.markdown(
+        "**Gentamicin** abstains on **28.9% of cases (225/779)** at alpha=0.05, "
+        "chosen empirically rather than derived. Overall coverage is **0.891, "
+        "still short of 0.90**. Most of those abstentions come from a single "
+        "isotonic calibration plateau at P=0.227 falling inside the both-labels "
+        "band, so this is a property of the calibration curve, not per-case "
+        "uncertainty. Excluding both-label abstentions, singleton coverage is "
+        "**0.847**.")
 
     st.markdown("#### 4. Honest explanations")
     st.markdown(
@@ -502,7 +540,22 @@ def tab_responsibility(metrics):
         "- **Annotation provenance.** AMRFinderPlus was run end-to-end on a "
         "20-genome validation subset; the full 3,342-genome training matrix uses "
         "CARD/PATRIC specialty-gene annotations at scale (stated plainly, not "
-        "presented as AMRFinderPlus output).")
+        "presented as AMRFinderPlus output).\n"
+        "- **Target-presence gate.** Implemented and validated offline "
+        "(`scripts/gates_and_diagnostics.py`): it forces a NO-CALL when a drug's "
+        "molecular target is absent. It **fires on 0/779 test genomes** because "
+        "all three targets (PBPs, 16S rRNA) are essential genes present in every "
+        "genome, so it is not wired into the live upload path.")
+
+    st.divider()
+    st.markdown("#### What we could not validate")
+    st.markdown(
+        "All reported metrics are computed on curated (CARD/PATRIC) annotations. "
+        "The upload path consumes AMRFinderPlus output, and the two annotation "
+        "sources share only **10.6% of gene names** on our 20-genome comparison. "
+        "**No genome was scored end-to-end** from FASTA through AMRFinderPlus to "
+        "verdict against its true phenotype. Our metrics describe the **demo "
+        "path**; the **upload path is documented but unmeasured**.")
 
 
 # ----------------------------- TAB 4: How it works -----------------------------
@@ -530,13 +583,13 @@ Class-conditional conformal prediction   (per-drug alpha → prediction set)
    └─►  empty / both   →  NO-CALL
    │
    ▼
-Deterministic gates:
-   • target-presence gate (drug target absent → forced NO-CALL)
-   • novelty gate (advisory only — never overrides)
+Deterministic novelty gate (advisory only — never overrides)
    │
    ▼
 Decision report  +  evidence category (i/ii/iii)  +  supporting genes
 ```
+(A target-presence gate is implemented and validated offline but is **not**
+wired into this upload path — see the Responsibility tab for why.)
         """)
     st.success(
         "**No language model touches the prediction path.** The optional OpenAI "

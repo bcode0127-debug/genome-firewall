@@ -50,11 +50,20 @@ ceftazidime:
     - 'murein.*polymerase'
     - 'peptidoglycan.*synthase'
   resistance_determinant_patterns:
-    # ESBLs (CTX-M, SHV, TEM families) hydrolyze ceftazidime directly;
-    # carbapenemases (KPC/NDM/VIM/IMP/OXA-48-like) also hydrolyze it.
+    # CTX-M (all variants are ESBLs) and specific ESBL SHV variants hydrolyze
+    # ceftazidime; carbapenemases (KPC/NDM/VIM/IMP/OXA-48-like) also hydrolyze it.
+    # DELIBERATELY EXCLUDED: the generic '\bshv\b'/'\btem\b' matches. blaSHV-1,
+    # blaSHV-11, blaSHV-28 and blaTEM-1/blaTEM-2 are narrow-spectrum
+    # penicillinases, NOT ESBLs, and do not confer ceftazidime resistance —
+    # tagging them as ceftazidime determinants was a biology error. We list
+    # only well-characterized ceftazidime-active ESBL SHV alleles explicitly
+    # (precision over recall): other ESBL alleles fall to evidence category
+    # (ii) statistical association rather than a false category (i).
     - '\bctx-m\b'
-    - '\bshv\b'
-    - '\btem\b'
+    - '\bshv-2\b'
+    - '\bshv-2a\b'
+    - '\bshv-5\b'
+    - '\bshv-12\b'
     - '\bkpc\b'
     - '\bndm\b'
     - '\bvim\b'

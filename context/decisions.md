@@ -77,11 +77,16 @@ unused fallback.
 Chose: two independent triggers — conformal prediction on the
 calibration split, plus a novelty gate.
 Rejected: single softmax probability threshold.
-Why: conformal gives distribution-free coverage rather than a tuned
-cutoff. The novelty gate (nearest-neighbour distance in feature
-space, plus count of AMR elements absent from the training
-vocabulary) covers the brief's "unlike the training data" clause,
-which a probability threshold cannot express.
+Why: conformal targets class-conditional coverage rather than a tuned
+cutoff — but the guarantee assumes calibration and test are
+exchangeable, and our MLST group split deliberately breaks that, so we
+report the MEASURED coverage rather than claiming a distribution-free
+guarantee. Measured class-conditional coverage misses nominal on every
+drug (meropenem susceptible 0.836, ceftazidime susceptible 0.822,
+gentamicin resistant 0.860). The novelty gate (nearest-neighbour
+distance in feature space, plus count of AMR elements absent from the
+training vocabulary) covers the brief's "unlike the training data"
+clause, which a probability threshold cannot express.
 
 ### ADR-006 — Drug-target presence gate
 Chose: deterministic, non-ML, applied before the model.

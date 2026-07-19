@@ -137,14 +137,19 @@ def part_b4(drug_props):
               f"{len(props['molecular_target_patterns'])} target patterns, "
               f"{len(props['resistance_determinant_patterns'])} determinant patterns")
 
-    # sanity check: 'tem' word-boundary pattern must not match "system"
-    tem_check = [p for p in drug_props["ceftazidime"]["resistance_determinant_patterns"]
-                 if "tem" in p]
-    rx = re.compile(tem_check[0], re.IGNORECASE)
-    print(f"   sanity check: pattern {tem_check[0]!r} matches 'system'? "
-          f"{bool(rx.search('multidrug efflux system'))} (must be False)")
-    print(f"   sanity check: pattern {tem_check[0]!r} matches 'TEM-1'? "
-          f"{bool(rx.search('tem-1'))} (must be True)")
+    # sanity check: ceftazidime determinants must NOT match the narrow-spectrum
+    # penicillinases blaSHV-11 / blaTEM-1 (not ESBLs), and must still match a
+    # true ceftazidime-active ESBL allele.
+    ceft_pats = compile_patterns(
+        drug_props["ceftazidime"]["resistance_determinant_patterns"])
+    print(f"   sanity check: any ceftazidime determinant matches 'SHV-11'? "
+          f"{any_match(ceft_pats, 'shv-11')} (must be False)")
+    print(f"   sanity check: any ceftazidime determinant matches 'TEM-1'? "
+          f"{any_match(ceft_pats, 'tem-1')} (must be False)")
+    print(f"   sanity check: any ceftazidime determinant matches 'SHV-12'? "
+          f"{any_match(ceft_pats, 'shv-12')} (must be True)")
+    print(f"   sanity check: any ceftazidime determinant matches 'CTX-M-15'? "
+          f"{any_match(ceft_pats, 'ctx-m-15')} (must be True)")
 
 
 def part_b5(df, drug_props, test_genome_ids):
